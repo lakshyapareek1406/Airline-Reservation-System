@@ -1,0 +1,323 @@
+// Lets import font to use =>
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:wght@500;7008 family-Spartan:wght@300;400;500&display-swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+
+
+}
+:root {
+    --PrimaryColor: hsl(225, 50%, 48%);
+    --SecondaryColor: hsl(180, 17%, 95%);
+    --colorOne: hsl(15, 74%, 70%);
+    --colorTwo: hsl(28, 100%, 82%);
+    --HoverColor: hsl(225, 56%, 59%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 12%); /* corrected */
+    --textColor: hsl(240, 1%, 48%);
+    --borderColor: hsl(0, 0%, 83%);
+    --whiteColorDeam: hsl(0, 0%, 93%); /* corrected */
+    --greyBg: hsl(0, 0%, 96%); /* corrected */
+    --greyText: hsl(0, 0%, 145); /* corrected */
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 3px, rgba(0, 0, 0, 0.05) 0px 4px 6px 2px;
+    --transition: 0.4s ease-in-out; /* corrected */
+}
+
+
+body {  
+    background:var(--whiteColor);
+}
+
+a{
+    text-decoration:none;
+
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.selection{
+
+    padding: 4rem 0 2rem;
+}
+
+.container {
+    padding-left:1.5rem ;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 1.3rem;
+    cursor: pointer;
+    align-items:center;
+
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+
+.none{
+    display: none;
+}
+
+
+.btn{
+    padding: .7rem 1.5rem;
+    background: var (--PrimaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: var(--whiteColor);
+
+    a{
+        color: var(--whiteColor);
+        font-weight: 500;
+    }
+    &:hover{
+        background: var(--HoverColor);
+    }
+    
+}
+
+img,video{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 100%;
+    color: var(--greyText);
+}
+
+p{
+    font-size: 13px;
+    color: var(--greyText);
+    line-height: 22px;
+
+}
+
+h4{
+    padding: 1rem 0;
+    font-weight: 700;
+    color: var(--blackColor);
+}
+
+h2{
+    font-size: 25px;
+    padding: 1rem 0;
+    color: var(--blackColor);
+}
+
+
+.logo{
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+ 
+}
+
+
+
+
+//home page
+
+.home {
+    
+    text-align:center ;
+    gap: 2rem;
+    flex-direction: column;
+
+    .mainText {
+
+        color: var(--blackColor);
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 2.5rem;
+    }
+    
+    .homeImages{
+
+        width: 75%;
+        margin: 1rem auto 0;
+        justify-content: center;
+        position: relative;
+        border-radius: 5rem;
+        
+    }
+
+    .VideoDiv{
+         width: 90%;
+         align-content: center;
+
+         .video{
+            border-radius: 10rem;
+         }
+    }
+    
+
+
+
+}
+
+
+
+
+.VideoDiv{
+    width: 90%;
+    align-content: center;
+
+    .video{
+       border-radius: 10rem;
+    }
+}
+
+    .plane{
+        position: absolute;
+        width: 100%;
+        top:-10%
+        
+      }
+
+
+      .homeImages{
+
+        width: 75%;
+        margin: 1rem auto 0;
+        justify-content: center;
+        position: relative;
+        border-radius: 5rem;
+        
+    }
+    /////////////////////////////
+    /// 
+//Search 
+
+
+.search{
+   .sectionContainer{
+     width: 100;
+     padding:1.5rem;
+     border: 2px solid var(--greyBg);
+     border-radius: 16px ;
+     row-gap:2rem;
+
+
+     .btns{
+            background: var(--SecondaryColor);
+            padding: .5rem;
+            border-radius: 1rem;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+
+            .singleBtn{
+                padding: .8rem 1.5rem;
+                font-size:13px;
+                border-radius: 3rem;
+                width: 80%;
+                text-align: center;
+
+                 &:hover{
+                    background: var(--PrimaryColor);
+                    color: var(--whiteColor);
+                    font-weight: 500;
+                    transition: .4s ease;
+                 }
+            }
+
+         .active{
+
+            background: var(--PrimaryColor);
+            color: var(--whiteColor);
+            font-weight: 500;
+            
+         }
+
+          
+     }
+
+     .searchInputs{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap:1.5rem;
+
+
+
+        .singleInput{
+            .iconDiv{
+
+                padding: 16px 10px;
+                border-radius: 3rem;
+                background: var(--SecondaryColor);
+                margin-right: 1rem ;
+
+                .icon{
+                    color: var(--blackColor);
+                    opacity: .7;
+                    
+                    
+
+                }
+            }
+
+            .texts{
+                h4{
+                    padding-top: 0;
+                    padding-bottom:.7rem ;
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+                input{
+                    width: 95%;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+
+                    &::placeholder{
+                        font-size: 12px;
+                        opacity: .5;
+
+                    }
+                }
+            }
+        }
+
+     }
+   }
+
+}
+
+
+
+
+//navg
+
+.nvh{
+
+    .navbar_with_Bg{
+        background:var(--SecondaryColor) ;
+        padding: .5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    } 
+}
+
